@@ -4,7 +4,6 @@ import Week from './weekdays';
 class Months extends React.Component {
   constructor(props) {
     super(props);
-    // console.log(props);
   }
 
   shouldComponentUpdate(nextProps) {
@@ -22,9 +21,7 @@ class Months extends React.Component {
           {month.name} {month.year}
         </h1>
         <h5>
-          {this.props.weeklabel.map(label => {
-            return label;
-          })}
+          <span>Sunday Monday Tuesday Wednesday Thursday Friday Saturday</span>
         </h5>
         <div className="week">
           {this.props.month.weeks.map((week, idx) => {
