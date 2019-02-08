@@ -8,7 +8,7 @@ class Weekdays extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="weekdays">
         {this.props.week.days.map((day, idx) => {
           return (
             <Day
