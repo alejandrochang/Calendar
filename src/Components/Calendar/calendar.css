@@ -1,18 +1,23 @@
-.all-months {
+
+body {
   height: 100%;
-  width: 50%;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  width: 99%;
+  margin: 0;
 }
 
-.week {
-
+h1 {
+  margin: 0;
 }
 
-h5 {
-  text-align: -webkit-center;
+h2 {
+  font-size: -webkit-xxx-large;
+  font-family: fantasy;
+  background-color: steelblue;
+  margin: 0;
+  padding-top: 18px;
+}
+
+.all-months {
+
 }
