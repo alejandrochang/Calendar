@@ -1,0 +1,18 @@
+.all-months {
+  height: 100%;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.week {
+
+}
+
+h5 {
+  text-align: -webkit-center;
+}
