@@ -17,7 +17,7 @@ class Months extends React.Component {
 
   render() {
     const { month } = this.props;
-    return (<div>
+    return (<div className="month">
         <h1>
           {month.name} {month.year}
         </h1>
