@@ -64,8 +64,16 @@ h2 {
 .weekdays {
   margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   height: 64px;
   top: 19px;
   font-family: serif;
+}
+
+.days {
+  border-style: solid;
+  border-width: 3px;
+  width: 70px;
+  text-align: center;
 }

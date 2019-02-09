@@ -6,7 +6,7 @@ class Days extends React.Component {
   }
 
   render() {
-    return <div onClick={this.props.select(this.props.dayIdx, this.props.weekIdx, this.props.monthIdx)} style={{cursor: 'pointer'}}>
+    return <div className="days" onClick={this.props.select(this.props.dayIdx, this.props.weekIdx, this.props.monthIdx)} style={{cursor: 'pointer'}}>
       {this.props.day.date}
       </div>;
   }
