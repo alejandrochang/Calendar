@@ -3,12 +3,24 @@ import React from 'react';
 class Days extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props.day.highlighted);
   }
 
   render() {
-    return <div className="days" onClick={this.props.select(this.props.dayIdx, this.props.weekIdx, this.props.monthIdx)} style={{cursor: 'pointer'}}>
-      {this.props.day.date}
-      </div>;
+    if (this.props.day.highlighted) {
+      return (
+        <div className="days-highligthed" style={{ cursor: "pointer" }}>
+          {this.props.day.date}
+          {/* <span className="circle"></span> */}
+        </div>
+      );
+    } else {
+      return (
+        <div className="days" style={{ cursor: 'pointer' }}>
+          {this.props.day.date}
+        </div>
+      );
+    }
   }
 }
 

@@ -25,7 +25,7 @@ class Months extends React.Component {
         </h5>
         <div className="week">
           {this.props.month.weeks.map((week, idx) => {
-            return <Week key={idx} monthIdx={this.props.monthIdx} weekIdx={idx} selectedDay={this.props.selectedDay} week={week} select={this.props.select}/>;
+            return <Week key={idx} selectedDay={this.props.selectedDay} week={week}/>;
           })}
         </div>
       </div>

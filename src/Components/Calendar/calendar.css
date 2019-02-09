@@ -31,7 +31,7 @@ span {
   word-spacing: 82px;
   width: 100%;
   position: relative;
-  left: 13%;
+  left: 13.5%;
   font-family: cursive;
   font-size: 16px;
 }
@@ -76,4 +76,20 @@ span {
   width: 143px;
   height: 83px;
   text-align: center;
+}
+
+.days-highligthed {
+  border-style: solid;
+  border-width: 1px;
+  width: 143px;
+  height: 83px;
+  text-align: center;
+  background-color: green;
+}
+
+.circle:before {
+  content: ' \25CF';
+  font-size: 200px;
+  left: 0%;
+  color: 
 }

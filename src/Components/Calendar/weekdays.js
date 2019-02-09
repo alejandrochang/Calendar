@@ -12,12 +12,8 @@ class Weekdays extends React.Component {
         {this.props.week.days.map((day, idx) => {
           return (
             <Day
-              monthIdx={this.props.monthIdx}
-              weekIdx={this.props.weekIdx}
-              dayIdx={idx}
               selectedDay={this.props.selectedDay}
               day={day}
-              select={this.props.select}
               key={idx}
             />
           );
