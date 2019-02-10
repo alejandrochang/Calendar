@@ -3,20 +3,25 @@ import React from 'react';
 class Days extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props.day.highlighted);
   }
 
   render() {
-    if (this.props.day.highlighted) {
+    if (this.props.day.highlighted && this.props.day.date) { // highlighted days
       return (
         <div className="days-highligthed" style={{ cursor: "pointer" }}>
           {this.props.day.date}
           <div className="circle"></div>
         </div>
       );
-    } else {
+    } else if (this.props.day.date) { // regular dayss
       return (
         <div className="days" style={{ cursor: 'pointer' }}>
+          {this.props.day.date}
+        </div>
+      );
+    } else { // null days
+      return (
+        <div className="null-days" style={{ cursor: "pointer" }}>
           {this.props.day.date}
         </div>
       );
