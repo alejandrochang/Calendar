@@ -14,6 +14,7 @@ class Weekdays extends React.Component {
             <Day
               selectedDay={this.props.selectedDay}
               selDay={this.props.selDay}
+              border={this.props.border}
               day={day}
               key={idx}
             />

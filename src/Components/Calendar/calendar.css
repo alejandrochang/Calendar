@@ -87,6 +87,15 @@ span {
   text-align: center;
 }
 
+.days-border {
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  width: 143px;
+  height: 83px;
+  text-align: center;
+}
+
 .null-days {
   border-style: solid;
   border-width: 1px;

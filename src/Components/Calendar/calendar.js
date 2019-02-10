@@ -6,9 +6,9 @@ class Calendar extends React.Component {
   constructor(props) {
     super(props);
     const stringDay = new Date().toLocaleString().slice(0, 9);
-    console.log('sday', stringDay);
 
     this.state = {
+      borderRed: false,
       selectedDay: stringDay,
       monthLabel: ["Sun ", "Mon ", "Tue ", "Wed ", "Thu ", "Fri ", "Sat "],
       months: [
@@ -256,8 +256,8 @@ class Calendar extends React.Component {
   }
 
 
-  selectedDay() {
-    console.log('inside')
+  changeColor = () => {
+    this.setState({ borderRed: !this.state.borderRed})
   }
 
   render() {
@@ -268,9 +268,10 @@ class Calendar extends React.Component {
             <Month
               weeklabel={this.state.monthLabel}
               selectedDay={this.state.selectedDay}
-              selDay={this.selectedDay}
+              selDay={this.changeColor}
               month={month}
               key={idx}
+              border={this.state.borderRed}
             />
           );
         })}
