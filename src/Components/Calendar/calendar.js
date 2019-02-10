@@ -32,7 +32,7 @@ class Calendar extends React.Component {
                 { date: 5, highlighted: false },
                 { date: 6, highlighted: false },
                 { date: 7, highlighted: false },
-                { date: 8, highlighted: true },
+                { date: 8, highlighted: false },
                 { date: 9, highlighted: false }
               ]
             },
@@ -51,20 +51,20 @@ class Calendar extends React.Component {
               days: [
                 { date: 17, highlighted: false },
                 { date: 18, highlighted: false },
-                { date: 19, highlighted: false },
+                { date: 19, highlighted: true },
                 { date: 20, highlighted: false },
                 { date: 21, highlighted: false },
-                { date: 22, highlighted: false },
-                { date: 23, highlighted: false }
+                { date: 22, highlighted: true },
+                { date: 23, highlighted: true }
               ]
             },
             {
               days: [
-                { date: 24, highlighted: false },
+                { date: 24, highlighted: true },
                 { date: 25, highlighted: false },
-                { date: 26, highlighted: false },
-                { date: 27, highlighted: false },
-                { date: 28, highlighted: false }
+                { date: 26, highlighted: true },
+                { date: 27, highlighted: true },
+                { date: 28, highlighted: true }
               ]
             }
           ],
@@ -75,57 +75,57 @@ class Calendar extends React.Component {
           weeks: [
             {
               days: [
-                { date: null },
-                { date: null },
-                { date: null },
-                { date: null },
-                { date: null },
-                { date: 1 },
-                { date: 2 }
+                { date: null, highlighted: false },
+                { date: null, highlighted: false },
+                { date: null, highlighted: false },
+                { date: null, highlighted: false },
+                { date: null, highlighted: false },
+                { date: 1, highlighted: false },
+                { date: 2, highlighted: false }
               ]
             },
             {
               days: [
-                { date: 3 },
-                { date: 4 },
-                { date: 5 },
-                { date: 6 },
-                { date: 7 },
-                { date: 8 },
-                { date: 9 }
+                { date: 3, highlighted: false },
+                { date: 4, highlighted: false },
+                { date: 5, highlighted: false },
+                { date: 6, highlighted: false },
+                { date: 7, highlighted: false },
+                { date: 8, highlighted: false },
+                { date: 9, highlighted: false }
               ]
             },
             {
               days: [
-                { date: 10 },
-                { date: 11 },
-                { date: 12 },
-                { date: 13 },
-                { date: 13 },
-                { date: 15 },
-                { date: 16 }
+                { date: 10, highlighted: false },
+                { date: 11, highlighted: false },
+                { date: 12, highlighted: false },
+                { date: 13, highlighted: false },
+                { date: 13, highlighted: false },
+                { date: 15, highlighted: false },
+                { date: 16, highlighted: false }
               ]
             },
             {
               days: [
-                { date: 17 },
-                { date: 18 },
-                { date: 19 },
-                { date: 20 },
-                { date: 21 },
-                { date: 22 },
-                { date: 23 }
+                { date: 17, highlighted: false  },
+                { date: 18, highlighted: false  },
+                { date: 19, highlighted: false  },
+                { date: 20, highlighted: false  },
+                { date: 21, highlighted: false  },
+                { date: 22, highlighted: false  },
+                { date: 23, highlighted: false  }
               ]
             },
             {
               days: [
-                { date: 24 },
-                { date: 25 },
-                { date: 26 },
-                { date: 27 },
-                { date: 28 },
-                { date: 29 },
-                { date: 30 }
+                { date: 24, highlighted: false  },
+                { date: 25, highlighted: false  },
+                { date: 26, highlighted: false  },
+                { date: 27, highlighted: false  },
+                { date: 28, highlighted: false  },
+                { date: 29, highlighted: false  },
+                { date: 30, highlighted: false  }
               ]
             },
             { days: [{ date: 31 }] }

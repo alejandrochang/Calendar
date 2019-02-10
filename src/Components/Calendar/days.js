@@ -11,7 +11,7 @@ class Days extends React.Component {
       return (
         <div className="days-highligthed" style={{ cursor: "pointer" }}>
           {this.props.day.date}
-          {/* <span className="circle"></span> */}
+          <div className="circle"></div>
         </div>
       );
     } else {
