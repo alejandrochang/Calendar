@@ -3,7 +3,7 @@ import React from 'react';
 class Days extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props.selDay);
+    console.log(this.props.selectedDay);
   }
 
   render() {
