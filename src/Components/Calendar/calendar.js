@@ -220,21 +220,21 @@ class Calendar extends React.Component {
               days: [
                 { date: 10, highlighted: true },
                 { date: 11, highlighted: true },
-                { date: 12, highlighted: true },
-                { date: 13, highlighted: true },
+                { date: 12, highlighted: false },
+                { date: 13, highlighted: false },
                 { date: 14, highlighted: true },
                 { date: 15, highlighted: true },
-                { date: 16, highlighted: true }
+                { date: 16, highlighted: false }
               ]
             },
             {
               days: [
                 { date: 17, highlighted: true },
-                { date: 18, highlighted: true },
-                { date: 19, highlighted: true },
-                { date: 20, highlighted: true },
-                { date: 21, highlighted: true },
-                { date: 22, highlighted: true },
+                { date: 18, highlighted: false },
+                { date: 19, highlighted: false },
+                { date: 20, highlighted: false },
+                { date: 21, highlighted: false },
+                { date: 22, highlighted: false },
                 { date: 23, highlighted: true }
               ]
             },
@@ -255,6 +255,10 @@ class Calendar extends React.Component {
   }
 
 
+  selectedDay = () => {
+    console.log('inside')
+  }
+
   render() {
     return (
       <div className="all-months">
@@ -263,6 +267,7 @@ class Calendar extends React.Component {
             <Month
               weeklabel={this.state.monthLabel}
               selectedDay={this.state.selectedDay}
+              selDay={this.selectedDay}
               month={month}
               key={idx}
             />

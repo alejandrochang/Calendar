@@ -3,12 +3,13 @@ import React from 'react';
 class Days extends React.Component {
   constructor(props) {
     super(props);
+    console.log(this.props.selDay);
   }
 
   render() {
     if (this.props.day.highlighted && this.props.day.date) { // highlighted days
       return (
-        <div className="days-highligthed" style={{ cursor: "pointer" }}>
+        <div onClick={this.props.selDay} className="days-highligthed" style={{ cursor: "pointer" }}>
           {this.props.day.date}
           <div className="circle"></div>
         </div>

@@ -13,6 +13,7 @@ class Weekdays extends React.Component {
           return (
             <Day
               selectedDay={this.props.selectedDay}
+              selDay={this.props.selDay}
               day={day}
               key={idx}
             />
